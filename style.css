@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    overflow-x: hidden;
+}
+
+p{
+    font-family: "Space Mono", monospace;
+}
+
+h1,h2{
+    font-family: "Bitter", serif;
+}
+
+body{
+    background-image: url(Assets/bg-img.png);
+    background-size: cover;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200%;
+}
+
+
+
+.nav{
+    width: 90vw;
+    margin: 0px auto;
+    height: 12vh;
+    margin-top: 70px;
+    text-align: right;
+    /* background-color: red; */
+}
+
+.nav h2{
+    font-size: 50px;
+}
+.nav p{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Hero Section starts  */
+
+.hero{
+    width: 90vw;
+    /* background-color: blue; */
+    margin: 0px auto;
+    height: 50vh;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 70px;
+    width: 50%;
+}
+
+.hero p{
+    width: 50%;
+    word-spacing: 3px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+button{
+    width: 180px;
+    height: 55px;
+    color: black;
+    font-size: 18px;
+    font-family: "Space Mono", monospace;
+    word-spacing: 3px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 30px;
+}
+
+@media (max-width:700px) {
+
+    .nav{
+        width: 65vw;
+    }
+
+    .hero{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .hero p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+}
+
+.container{
+    width: 95%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.box{
+    width: 22%;
+    background: rgba(255, 255, 255, 25%);
+    box-shadow: inset -8px -8px 20px; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    justify-content: center;
+    padding: 10px;
+}
+
+h3{
+    font-family: "Space Mono", monospace;
+    font-size: 22px;
+}
+
+.box img{
+    width: 40px;
+}
+
+@media (max-width:700px){
+    .container{
+        width: 90vw;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        width: 70%;
+        height: 22%;
+    }
+}
